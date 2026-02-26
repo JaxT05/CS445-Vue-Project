@@ -27,7 +27,7 @@ export default {
         <button @click="showModal = true">View</button>
     </div>
 
-    <DogModal :image="imageUrl" v-if="showModal" @close="showModal = false" />
+    <DogModal :showModal="showModal" :imageUrl="imageUrl" @close="showModal = false" />
 
 </template>
 
